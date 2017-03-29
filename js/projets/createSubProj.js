@@ -8,7 +8,7 @@ createSubProj = createSubProj || function(proj){
     sub_footer = doFooter();
     
     var Pid = proj.id;
-    var filename = "html/"+Pid+".html";
+    var filename = ""+Pid+".html";
     var file_content = "";
 
     file_content += sub_header;
