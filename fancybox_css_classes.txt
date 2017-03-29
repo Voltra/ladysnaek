@@ -1,0 +1,11 @@
+.fancybox-enabled, .fancybox-enabled body, .fancybox-container, .fancybox-container ~ .fancybox-container, .fancybox-bg, .fancybox-container--ready .fancybox-bg, .fancybox-controls, .fancybox-show-controls .fancybox-controls, .fancybox-infobar, .fancybox-show-infobar .fancybox-infobar, .fancybox-infobar__body, .fancybox-buttons, .fancybox-show-buttons .fancybox-buttons, .fancybox-slider-wrap, .fancybox-slider-wrap,
+.fancybox-slider, .fancybox-slide, .fancybox-slide::before, .fancybox-slide > *, .fancybox-slide--image, .fancybox-slide--image::before, .fancybox-content, .fancybox-iframe, .fancybox-slide--video .fancybox-content, .fancybox-slide--video .fancybox-iframe, .fancybox-placeholder, .fancybox-image,
+.fancybox-spaceball, .fancybox-controls--canzoomOut .fancybox-placeholder, .fancybox-controls--canzoomIn .fancybox-placeholder, .fancybox-controls--canGrab .fancybox-placeholder, .fancybox-controls--isGrabbing .fancybox-placeholder,  .fancybox-spaceball, .fancybox-tmp, .fancybox-error, .fancybox-error p, .fancybox-close-small, .fancybox-close-small:after , .fancybox-close-small:focus:after,   .fancybox-slide--video .fancybox-close-small, 
+.fancybox-close-small:hover:after, .fancybox-caption-wrap , .fancybox-show-caption .fancybox-caption-wrap, .fancybox-caption, .fancybox-caption a,
+.fancybox-caption button , .fancybox-caption a, .fancybox-button, .fancybox-button--disabled , 
+.fancybox-infobar__body, .fancybox-button , .fancybox-button:hover, .fancybox-button::before,
+.fancybox-button::after, .fancybox-button--disabled::before,
+.fancybox-button--disabled::after, .fancybox-button--left::after, .fancybox-button--right::after, .fancybox-button--left , .fancybox-button--right, .fancybox-button--close, .fancybox-loading, 
+
+
+.fancybox-button--close
