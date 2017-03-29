@@ -1,0 +1,171 @@
+Hi, I'm working on a school project and I tried to use Fancybox to create a gallery.
+My issue is : the gallery is created, you can see all images of the gallery on the side list menu, all functionalities are working just fine except that no matter what image you first click on or even browsing the gallery in the modal "window" only the first image of the set is displayed and all others are not even shown.
+
+
+
+
+
+
+Here's my HTML (important parts only):
+
+   Head scripts
+
+    <!--Regular Scripts-->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jq-plugins/rotation.js" type="text/javascript" ></script>
+    <script src="js/jq-plugins/transit.js" type="text/javascript" ></script>
+    <script src="js/jq-plugins/Vague.js" type="text/javascript" ></script>
+    <script src="js/jq-plugins/Modal_fancybox.js" type="text/javascript" whatIdo="fancybox3"></script>
+
+   List
+
+    <ul id="gallerie">
+    	<li>
+    		<a>
+    			<img src="photoshop/test1.png" alt="img test"/>
+    		</a>
+    	</li>
+    	
+    	<li>
+    		<a>
+    			<img src="photoshop/test2.png" alt="img test"/>
+    		</a>
+    	</li>
+    	
+    	<li>
+    		<a>
+    			<img src="photoshop/test3.png" alt="img test"/>
+    		</a>
+    	</li>
+    	
+    	<li>
+    		<a>
+    			<img src="photoshop/test4.png" alt="img test"/>
+    		</a>
+    	</li>
+    	
+    	<li>
+    		<a>
+    			<img src="photoshop/test5.png" alt="img test"/>
+    		</a>
+    	</li>
+    	
+    	<li>
+    		<a>
+    			<img src="photoshop/test6.png" alt="img test"/>
+    		</a>
+    	</li>
+    	
+    	<li>
+    		<a>
+    			<img src="photoshop/test7.png" alt="img test"/>
+    		</a>
+    	</li>
+    	
+    	<li>
+    		<a>
+    			<img src="photoshop/test8.png" alt="img test"/>
+    		</a>
+    	</li>
+    	
+    	<li>
+    		<a>
+    			<img src="photoshop/test9.png" alt="img test"/>
+    		</a>
+    	</li>
+    	
+    	<li>
+    		<a>
+    			<img src="photoshop/test10.png" alt="img test"/>
+    		</a>
+    	</li>
+    </ul>
+
+
+
+Here is the javascript I use to modify every links around those images :
+
+    $(document).ready(updateTags);
+    //Calls ↓
+    
+    
+    function updateTags(){
+        var $LIs = $("#gallerie").children("li");
+        
+        $LIs.each(doTagUpdate);
+        
+        setupModal();
+    }
+    //Calls ↓
+    
+    
+    function doTagUpdate(index, elem){
+        //caching results for performance optimization
+        var $a = $(this).children("a").eq(0);
+        var $img = $a.children("img").eq(0);
+        var $path = $img.attr("src");
+    
+        //get filename from img
+        var filename = getFileName($path);
+    
+        //set attributes and properties
+        $a.attr("href", $path);
+        $a.attr("data-fancybox", "gallery");
+    //    $a.attr("data-fancybox",filename);
+    //    $a.addClass("VNgallerie");
+    //    $a.attr("rel","gallery");
+    //    $a.attr("data-type","images");
+    }
+    //Calls ↓
+    
+    
+    function getFileName(path){
+        var beg = 0;
+        var end = 0;
+        //beg and end exist for understanding purposes only
+        
+        var Fname = "";
+        
+        //get filename with extension
+        for(var i = path.length ; i >= 0 ; i-=1){
+            if(path.charAt(i) === '/'){
+                beg=i+1;
+                
+                Fname = path.substring(beg);
+                break;
+            }
+        }
+        
+        //remove extension
+        for(var i = Fname.length ; i >= 0 ; i-=1){
+            if(Fname.charAt(i) === '.'){
+                end=i;
+                
+                Fname = Fname.substring(0, end);
+            }
+        }
+        
+        return Fname;
+    }
+    
+    
+    
+    
+    
+    
+    
+    function setupModal(){
+        $.fancybox.defaults.speed = sidemenu_slide_duration * 0.6;
+        
+        $(".VNgallerie").fancybox(
+            {
+                'image': {
+                    protect:true
+                },
+                'type': 'image',
+                'helpers': {
+                    'title': null
+                }
+            }
+        );
+    }

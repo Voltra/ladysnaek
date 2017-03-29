@@ -1,0 +1,82 @@
+#projets * {
+    box-sizing: border-box;
+}
+
+
+
+
+/**@@projets@@**/
+#projets {
+	width : 100vw;
+    height:auto;
+    overflow-x: hidden;
+    
+    box-sizing: border-box;
+}
+
+
+#projets > li > .ui-progressbar{
+    position:relative;
+    width:80%;
+    height:10%;
+    
+    margin-top:48%;
+    margin-left:10%;
+    margin-right:10%;
+    
+    
+    border:none;
+    border-bottom-left-radius: calc(100vh * 10 / 100);
+    border-bottom-right-radius: calc(100vh * 10 / 100);
+    border-top-left-radius: calc(100vh * 10 / 100);
+    border-top-right-radius: calc(100vh * 10 / 100);
+    
+    z-index: 4;
+    
+    overflow: none;
+    
+    
+    display: none;
+}
+
+#projets > li > .ui-progressbar > .ui-progressbar-value{
+	border:none;
+    height:200%;
+    
+    z-index: 5;
+    left:10.5vh;
+    margin-left:0;
+    
+    
+    transition: width 0.9s ease-in-out; /*for animation time see updateTags.js and AJAXprogressBars.js  (add both fadein and fadeout time)*/
+}
+
+#projets > li > .ui-progressbar > .ui-progress-txt{
+    position: absolute;
+    width:auto;
+    height:auto;
+    font-family: roboto;
+    font-size: 2vh;
+    top:0;
+    left:0;
+    
+    overflow: hidden;
+    
+    
+    filter: drop-shadow(0 0vmin 0.6vmin rgba(0,0,0,0.35));
+}
+
+
+.ui-widget.ui-widget-content {
+	border:none;
+}
+
+
+
+
+#projets > li > a{
+    width:auto;
+    height:auto;
+    display:block;
+    overflow: hidden;
+}

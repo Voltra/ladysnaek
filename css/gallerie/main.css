@@ -1,0 +1,61 @@
+/*@@IMAGE GALLERY@@*/
+#gallerie {
+	width:100vw;
+    height:auto;
+    
+    display: block;
+}
+
+/*list item*/
+#gallerie li{
+    float:left;
+	position:relative;
+    width: 40vw;/*2 images per row*/
+    height:22.5vw;
+    
+    margin-right:calc(20vw / 3);
+    margin-left: 0;
+    margin-bottom: calc(20vw / 3);
+}
+
+/*single image*/
+#gallerie li img{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    
+    cursor:pointer;
+    
+    
+}
+
+
+/*first two li*/
+#gallerie li:nth-child(-n + 2){
+    margin-top:calc(20vw / 3);
+}
+
+/*first item of each row*/
+#gallerie li:nth-child(2n+1){
+    margin-left:calc(20vw / 3);
+}
+
+/*last item of each row*/
+#gallerie li:nth-child(2n+2){
+    margin-right:0;
+}
+
+/*last 2 items*/
+#gallerie li:nth-last-child(-n+2){
+    margin-bottom:calc(10vh + (20vw / 3));/*because you needa add the button's bar height to the margin*/
+}
+
+/*img hover*/
+/*#gallerie li:hover{
+	box-shadow: 0 0.2vmin 0.4vmin 0.2vmin rgba(0,0,0,0.35);
+    transform:scale(0.97);
+}*/

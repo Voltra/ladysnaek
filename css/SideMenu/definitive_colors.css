@@ -1,0 +1,63 @@
+#sidemenu{
+    background-color:aquamarine;/*not important*/
+}
+
+#gallerie {
+	background-color: #e9ebee;
+}
+
+#sidemenu_opener_bar {
+	background-color: rgba(0,0,0,0.01);
+    box-shadow:0 0 0.4vmin 0.2vmin rgba(0,0,0,0.1);
+}
+
+button#sm-button{
+    background-color: rgba(0,0,0,0.01);
+    box-shadow:0 0 0.4vmin 0vmin rgba(0,0,0,0.1);
+}
+
+#sidemenu #nav li{
+    background-color:#e9ebee;  /*#3C3F41*/ /*darkslategray*/ /*#263238*/ /*#00796B*/ /*#22496B*/ /*#056767*/ /*#3a539b*/ /*#009688*/
+}
+
+#page{
+    background-color:#e9ebee;
+    /*box-shadow: 0 0 0.2vmin 0.4vmin rgba(233,235,238,0.35);*/ /*alternative shadow*/
+}
+
+#sw-holder{
+    background-color: transparent;
+}
+
+*{
+    color:#3C3F41;
+}
+
+#sw-holder span{
+    background-color:#3C3F41;
+}
+
+#page-title {
+	text-transform: uppercase;
+}
+
+#sidemenu #nav li a{
+    text-transform: uppercase;
+    color:#3C3F41;
+    filter:drop-shadow(0 0.15vmin 0.4vmin rgba(0,0,0,0.2));
+}
+
+
+
+
+#sidemenu #nav li:hover{
+    transition: background 0.25s ease-in-out;
+/*    transition: border 0.3s ease-in-out;*/
+    background-color:#3C3F41;
+/*    border-left:1vmin solid #e9ebee;*/
+}
+
+#sidemenu #nav li:hover a{
+    transition: all 0.25s ease-in-out;
+    color:#e9ebee;
+}

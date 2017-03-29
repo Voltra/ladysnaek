@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <!--Page Info-->
+        <title>Gallerie</title>
+        <link rel="icon" type="image/png" href="/src/img/png/favicon.png" whatIdo="icône sur l'onglet de la page (et dans les favoris)"/>
+        <meta charset="utf-8" whatIdo="adapter le jeu de caractère au maximum"/>
+        <meta lang="fr"/>
+        <meta name="author" content="Voltra - Ludwig GUERIN"/>
+        <meta name="keywords" content="ladysnake, gallerie"/>
+        
+        
+        <!--Important META-->
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" whatIdo="adaptation au support"/>
+        
+        
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="/css/reset.css" whatIdo="réinitialiser les styles par défaut du navigateur"/>
+        <link rel="stylesheet" href="/css/clear_float.css" whatIdo="réinitiliser le flux(float) de la page"/>
+        
+        <link rel="stylesheet" href="/css/font-load.css" whatIdo="charger les polices de caractères"/>
+        
+        
+        <link rel="stylesheet" href="/css/SideMenu/commun.css" whatIdo="styles du menu latéral communs à tous les supports"/>
+        <link rel="stylesheet" href="/css/SideMenu/mobile.css" whatIdo="styles du menu latéral pour petites résolutions" media="screen and (max-width:768px)"/>
+        <link rel="stylesheet" href="/css/SideMenu/main.css" whatIdo="styles principaux du menu latéral" media="screen and (min-width:768px)"/>
+        <link rel="stylesheet" href="/css/SideMenu/hamburger.css" whatIdo="créer le bouton pour ouvrir le menu latéral"/>
+        
+        
+        <link rel="stylesheet" href="/css/gallerie/commun.css" whatIdo="styles communs à tous les supports"/>
+        <link rel="stylesheet" href="/css/gallerie/main.css" whatIdo="styles principaux"  media="screen and (min-width:768px)"/>
+        <link rel="stylesheet" href="/css/gallerie/mobile.css" whatIdo="styles pour petites résolutions" media="screen and (max-width:768px)"/>
+        <link rel="stylesheet" href="/css/gallerie/mobile.css" whatIdo="styles pour l'orientation portrait" media="screen and (orientation:portrait)"/>
+        
+        
+        
+
+        
+        <link rel="stylesheet" href="/css/gallerie/definitive_colors.css" whatIdo="couleurs définitives"/>
+        <link rel="stylesheet" href="/css/SideMenu/definitive_colors.css" whatIdo="couleurs définitives du menu latéral"/>
+        <!--<link rel="stylesheet" href="/css/gallerie/debug.css" whatIdo="Debug pour développeur"/>-->
+        <!--<link rel="stylesheet" href="/css/SideMenu/debug.css" whatIdo="Debug menu latéral pour développeur/>-->
+        
+        <link rel="stylesheet" href="/css/fancybox.css" whatIdo="modal les images"/>
+<!--        <link rel="stylesheet" href="/css/fixModal.css" whatIdo="fix modal"/>-->
+        
+
+        
+        
+        
+        
+        <!--Regular Scripts-->
+        <script src="/js/jquery.js" type="text/javascript" whatIdo="simplifier le JS"></script>
+        <script src="/js/jq-plugins/rotation.js" type="text/javascript" whatIdo="effectuer des rotations d'éléments w/ JQuery"></script>
+        <script src="/js/jq-plugins/transit.js" type="text/javascript" whatIdo="simplifier les transitions w/ JQuery"></script>
+        <script src="/js/jq-plugins/Vague.js" type="text/javascript" whatIdo="créer un flou"></script>
+        <script src="/js/jq-plugins/fancybox.js" type="text/javascript" whatIdo="modal les images"></script>
+
+
+
+        
+        
+        
+        <!--Custom made Scripts-->
+        <script src="/js/SideMenu/reveal.js" type="text/javascript" whatIdo="ouvrir/fermer le menu latéral"></script>
+        <script src="/js/clickLI.js" type="text/javascript" whatIdo="rendre les LI cliquables"></script>
+        <script src="/js/gallerie/link-LI.js" type="text/javascript" whatIdo="faire en sorte que les éléments de liste soient cliquables (en plus du lien en lui-même)"></script>
+        <script src="/js/SideMenu/script.js" type="text/javascript" whatIdo="animer l'icone menu"></script>
+        <script src="/js/gallerie/updateTags.js" type="text/javascript" whatIdo="créer le html manquant de façon dynamique"></script>
+        <script src="/js/SideMenu/disable_link.js" type="text/javascript" whatIdo="désactiver le lien de la page actuelle"></script>
+        
+        
+        <script whatIdo="effacer la console">
+            $(console.clear());
+        </script>
+        
+
+    </head>
+    
+    
+    <body>
+        <div id="sidemenu" role="navigation">
+            <ul id="nav">
+                <li>
+                    <a href="/index.html">accueil</a>
+                </li>
+                
+                <li>
+                    <a href="/projets.html">projets</a>
+                </li>
+                
+                <li>
+                    <a nopified="1">galerie</a>
+                </li>
+                
+                <li>
+                    <a href="/equipe.html">équipe</a>
+                </li>
+                
+                <li>
+                    <a href="/jeux.html">jeux</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="page">
+            <div id="sidemenu_opener_bar">
+                <button id="sm-button">
+                    <span id="sw-holder">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+                
+                <div id="title-wrap">
+                    <a href="/index.html" id="page-title"><img src="src/img/png/logo.png" alt="logo"/></a>
+                </div>
+            </div>
+            
+            <div id="page_content">
+                <ul id="gallerie">
+                    <li>
+                        <a>
+                            <img src="/photoshop/test1.png" alt="img test"/>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="/photoshop/test2.png" alt="img test"/>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="/photoshop/test3.png" alt="img test"/>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="/photoshop/test4.png" alt="img test"/>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="/photoshop/test5.png" alt="img test"/>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="/photoshop/test6.png" alt="img test"/>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="/photoshop/test7.png" alt="img test"/>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="/photoshop/test8.png" alt="img test"/>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="/photoshop/test9.png" alt="img test"/>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="/photoshop/test10.png" alt="img test"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <clear_float></clear_float> <!--clear_float custom HTML tag-->
+        
+        
+        <!-- <div id="modal">
+            <div id="hold-meh-boi">
+                <div id="sub-modal">
+                    <img src="/photoshop/img_test.png" id="modal-receptacle"/>
+                    <button id="prev-btn"><</button>
+                    <button id="next-btn">></button>
+                </div>
+            </div>
+        </div> -->
+        
+    </body>
+</html>

@@ -1,0 +1,27 @@
+#sidemenu{
+    background-color:aquamarine;
+}
+
+#sidemenu_opener_bar {
+	background-color: darkslategray;
+}
+
+button#sm-button{
+    background-color: forestgreen;
+}
+
+#sidemenu #nav li{
+    background-color: brown;
+}
+
+#page{
+    background-color: crimson;
+}
+
+#sw-holder{
+    background-color: blueviolet;
+}
+
+#title-wrap {
+	background-color:darkturquoise;
+}

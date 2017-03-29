@@ -1,0 +1,101 @@
+
+#logo{
+    background-color:#E6E8EB;/*e9ebee mod comme pour gallerie*/
+    filter: drop-shadow(0 0.15vmin 0.4vmin rgba(0,0,0,0.10));
+    border:none; /*#263238*/
+}
+
+
+
+
+#links > ul > li{
+    background-color:#263238; /*#3C3F41*/
+    background-color:#e9ebee;
+}
+#links > ul > li:hover{
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 0 0 0 transparent;
+    border-left:2vmin solid #e9ebee;
+    border-right:2vmin solid #e9ebee;
+/*
+    border-left:1vmin solid #263238;
+    border-right:1vmin solid #263238;
+*/
+    
+}
+#links > ul > li > a{
+    color:#263238;
+    filter: drop-shadow(0 0.15vmin 0.4vmin rgba(0,0,0,0.4));
+
+}
+
+#social_medias{
+    box-shadow: -1vmin 0 0.4vmin 0.8vmin #e9ebee, 1vmin 0 0.4vmin 0.8vmin #e9ebee, 0 -0.2vmin 0.4vmin 0 rgba(0,0,0,0.69);
+}
+
+#social_medias > ul > li{
+    background-color:#e9ebee;/*#3C3F41*/ /*rgba(0, 87, 87,0.55)*/
+    /*border-right: 0.2vmin solid #e9ebee;*/
+}
+
+#social_medias > ul > li:hover{
+    /*border:0.2vmin solid #e9ebee;*/
+    box-shadow:0 -0.4vmin 0.4vmin 0.2vmin rgba(0,0,0,0.1);
+    background-color:#3c3f41;
+    transition:all 0.3s ease-in-out;
+}/*customize this last*/
+#social_medias > ul > li:hover > a{
+	filter:hue-rotate(18deg) saturate(108%) brightness(380%);
+}
+
+
+#links > ul > li{
+/*
+    border-bottom:0.2vmin solid #263238;
+    border-collapse: separate;
+*/
+}
+#links > ul > li:last-child{
+    border-bottom:none;
+    border-collapse: separate;
+}
+
+/*#links > ul > li:hover{
+    filter:hue-rotate(20deg);
+    box-shadow:0 0.1vmin 0.2vmin 0.2vmin rgba(0,0,0,0.2);
+}*//*must be the last one to be customized*/
+
+/*
+#links > ul > li:first-child:hover{
+    border-top:0.2vmin solid #263238;
+}
+*/
+
+#links > ul > li > a{
+    text-transform: uppercase;
+}
+
+
+#links > ul > li:hover{
+    transition:all 0.3s ease-in-out;
+    background-color:#3C3F41;
+}
+
+#links > ul > li:hover > a{
+    transition:all 0.3s ease-in-out;
+    color:#e9ebee;
+}
+
+
+#logo img{
+    filter:drop-shadow(0 0 0.3vmin rgba(0,0,0,0.69));
+}
+
+#logo{
+    background-color: transparent;
+    box-shadow: 0 0 0 transparent;
+}
+
+.sm-logo {
+	filter:drop-shadow(0 0 0.3vmin rgba(0,0,0,0.35));
+}

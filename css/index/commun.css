@@ -1,0 +1,72 @@
+
+/**@@GLOBAL MODS@@**/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:#e9ebee; /**couleur des textes*/
+}
+
+body{
+    position: relative;
+    width:100vw;
+    height:100vh;/*modifier en auto une fois fini*/
+    background-color:#e9ebee;/*couleur de fond finale*/
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: raleway;
+}
+
+a::first-letter{
+    text-transform: capitalize;
+}
+
+#social_medias > ul > li{
+	border-right:0.2vmin solid rgba(233,235,238);
+}
+#social_medias > ul > li:last-child{
+	border-right:none;
+}
+
+
+#logo img{
+	width:80%;
+    height:80%;
+    
+    margin-left:10%;
+}
+
+#logo-txt {
+    position:absolute;
+    display: block;
+    width:100%;
+    left:calc(60% - (4 * 2vw));
+    top:80%;
+    bottom:1vw;
+	font-size: 2vw;
+    color:#3c3f41;
+    font-family: raleway;
+    text-transform: uppercase;
+    font-weight: 600;
+/*    background-color: #ff00ff;*/
+}
+
+#logo-txt2 {
+	position:absolute;
+    display: block;
+    width:100%;
+    left:calc(60% - (4 * 2vw));
+    top:calc(80% + 2vw);
+    bottom:0;
+    font-size: 1vw;
+    color: #3c3f41;
+    font-family: raleway;
+    text-transform: uppercase;
+}

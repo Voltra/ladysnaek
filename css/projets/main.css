@@ -1,0 +1,50 @@
+/**@@projets@@**/
+#projets > li{
+    width : 45vw;
+    height : calc(45vw * 9 / 16);
+    position: relative;
+    float:left;
+    display: block;
+}
+
+#projets > li > a > .projet_img{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+    cursor: pointer;
+}
+
+
+
+/*margins*/
+    /*first of each row*/
+#projets > li:nth-child(2n+1){
+    margin-left:calc((100vw - (45vw * 2)) / 3);
+}
+
+    /*all*/
+#projets > li{
+    margin-right: calc((100vw - (45vw * 2)) / 3);
+    margin-bottom: calc((100vw - (45vw * 2)) / 3);
+}
+    
+    /*first 2*/
+#projets > li:nth-child(-n + 2){
+    margin-top:calc((100vw - (45vw * 2)) / 3);
+}
+
+    /*last 2*/
+#projets > li:nth-last-child(-n + 2){
+    margin-bottom: calc( ((100vw - (45vw * 2)) / 3) + 10vh );
+}
+
+
+
+
+#projets > li > .ui-progressbar > .ui-progress-txt{
+    font-size: 3vh;
+}

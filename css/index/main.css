@@ -1,0 +1,148 @@
+            /***************CONTENT***************/
+/*content container*/
+#wrapper{
+    position: relative;
+    width:90vw;
+    height:60vh;
+    margin:20vh auto;
+}
+
+
+/**@@LOGO@@**/
+/*logo container*/
+#logo_holder{
+    float:left;
+    
+    position: relative;
+    width:calc(90vw * 30 / 100);
+    height:60vh;
+}
+
+/*actual logo*/
+#logo{
+    position:absolute;
+    
+    /*background-image: url("../../src/img/png/logo.png");
+    background-size: contain;*/
+    background-repeat: no-repeat;
+    
+    width:25vw;
+    height:25vw;
+    
+    
+    top:calc( calc(60vh - 25vw) / 2);
+    left:calc( calc(27vw - 25vw) / 2);/*calc(90vw * 30 / 100) est égal à 27vw*/
+    
+    border-radius: 25vw;
+}
+
+
+/**@@LINKS@@**/
+/*links container*/
+#links_holder{
+    float:left;
+    position:relative;
+    width:calc(90vw - calc(90vw * 30 / 100));/*90vw -> wrapper's width*/
+    height:100%;
+    
+    text-align:center;
+}
+
+/*actual links*/
+#links{
+    width:90%;
+    height:80%;
+    margin:auto;
+}
+
+/*list of links holders*/
+#links > ul{
+    width:100%;
+    height:100%;
+}
+/*indiviual link holder*/
+#links > ul > li {
+    position:relative;
+    width:100%;
+    height:25%;
+}
+/*individual link*/
+#links > ul > li > a{
+    position:absolute;
+    width:100%;
+    height:100%;
+    font-size: 8vh;
+    top:12.5%;
+    left:0;
+
+    
+    
+    /*background-color:darkorchid;*//*mainly for debug*/
+    display:block;
+    
+}
+
+
+
+
+/*social medias holder*/
+#social_medias{
+    position:relative;
+    width:90%;
+    height:20%;
+    margin:auto;
+}
+/*list of icons*/
+#social_medias > ul{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+}
+/*holder of icon*/
+#social_medias > ul > li{
+    display: block;
+    position:relative;
+    width:25%;
+    height:100%;
+    float:left;
+}
+
+/*social media logo*/
+.sm-logo{
+    position:absolute;
+    display:block;
+    /*background-color:aqua;*//*mainly for debug*/
+    height:10vh;
+    width:10vh;
+    margin:1vh calc((100% - 10vh) / 2);
+    background-size: cover;
+}
+
+.sm-logo#fb{
+    background-image: url("../../src/img/png/social/facebook.png");
+}
+.sm-logo#twitter{
+    background-image: url("../../src/img/png/social/twitter.png");
+}
+.sm-logo#yt{
+    background-image: url("../../src/img/png/social/youtube.png");
+}
+.sm-logo#instagram{
+    background-image: url("../../src/img/png/social/instagram.png");
+}
+.sm-logo#steam{
+    background-image: url("../../src/img/png/social/steam.png");
+}
+.sm-logo#gamejolt{
+    background-image: url("../../src/img/png/social/gamejolt.png");
+}
+/*.sm-logo:first-child{
+    margin-left:0;
+}
+.sm-logo:last-child{
+    margin-right:0;
+}*/
+
+

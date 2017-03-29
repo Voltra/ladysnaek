@@ -1,0 +1,35 @@
+/**@@SIDEMENU@@**/
+#sidemenu{
+    position:relative;
+    
+    width:40vw;
+    height:100vh;/*change to auto when done (or try removing it and test bottom0)*/
+    
+    z-index:0;
+}
+
+
+
+#sidemenu a{
+    overflow:hidden;
+    
+    display:block;
+	text-decoration: none;
+    text-align: left;
+    color:#e9ebee;
+    
+    position: absolute;
+    top:7.5vh;
+    left:1vw;
+    
+    width:auto;
+    height:50%;
+    
+    font-size: 5vh;
+    font-family: raleway, monospace;
+}
+
+.a-hw{
+    top:calc((10vh - 5vmin) / 2);
+    font-size:5vmin;
+}

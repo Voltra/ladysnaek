@@ -1,0 +1,43 @@
+/*@@commun@@*/
+
+
+/*@@main@@*/
+#wrapper{
+    background-color: rgba(0,0,0,0.8);
+}
+
+#logo_holder{
+    background-color: rgba(0,255,255,0.51);
+}
+
+#logo{
+    background-color:rgba(255,235,205,0.71);
+}
+
+#links_holder {
+	background-color:rgba(220,20,60,0.63);
+}
+
+#links{
+    background-color:darkblue;
+}
+
+#links > ul{
+    background-color:rgba(255,140,0,0.55);
+}
+
+#links > ul > li{
+    background-color:rgba(255,140,0,0.85);
+}
+
+#social_medias{
+    background-color:darkslateblue;
+}
+
+#social_medias > ul{
+	background-color:black;
+}
+
+#social_medias > ul > li{
+    background-color:aqua;
+}

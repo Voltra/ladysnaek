@@ -1,0 +1,48 @@
+/*@@IMAGE GALLERY@@*/
+#gallerie {
+	width:100vw;
+    height:auto;
+    
+    display: block;
+}
+
+/*list item*/
+#gallerie li{
+    float:left;
+	position:relative;
+    width: 90vw;/*1 images per row*/
+    height:50.625vw;
+    
+    margin-right:5vw;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+}
+
+/*single image*/
+#gallerie li img{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:100%; /*fix to make image fit*/
+    height:100%; /*fix to make image fit*/
+    
+    cursor:pointer;
+}
+
+/*first image*/
+#gallerie li:first-child{
+    margin-top: 5vw;
+}
+
+/*last image*/
+#gallerie li:last-child{
+    margin-bottom:calc(10vh + 5vw);/*because you needa add the button's bar height to the margin*/
+}
+
+/*img hover*/
+/*#gallerie li:hover{
+	box-shadow: 0 0.2vmin 0.4vmin 0.2vmin rgba(0,0,0,0.35);
+    transform: scale(0.95);
+}*/

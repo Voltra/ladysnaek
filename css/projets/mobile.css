@@ -1,0 +1,44 @@
+/**@@projets@@**/
+#projets > li{
+    width : 90vw;
+    height : calc(90vw * 9 / 16);
+    position: relative;
+    float:left;
+}
+
+#projets > li > a > .projet_img{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+    cursor: pointer;
+}
+
+
+
+/*margins*/
+
+    /*all*/
+#projets > li{
+    margin-right: calc((100vw - 90vw) / 2);
+    margin-bottom: calc((100vw - 90vw) / 2);
+    margin-left: calc((100vw - 90vw) / 2);
+}
+    /*very first*/
+#projets > li:nth-child(-n + 1){
+    margin-top:calc((100vw - 90vw) / 2);
+}
+
+    /*very last*/
+#projets > li:nth-last-child(-n + 1){
+    margin-bottom: calc(((100vw - 90vw) / 2) + 10vh);/*because you needa add the button's bar height to the margin*/
+}
+
+
+
+#projets > li > .ui-progressbar > .ui-progress-txt{
+    font-size: 2.5vh;
+}

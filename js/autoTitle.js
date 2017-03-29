@@ -1,0 +1,1 @@
+document.title = (location.pathname.substring(location.pathname.lastIndexOf("/") + 1)).replace('.html','');

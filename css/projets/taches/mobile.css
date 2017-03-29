@@ -1,0 +1,10 @@
+#taches > li > p{
+    top:2.5vmin;
+    left:calc(96vw - 40vw);
+    font-size:calc(3vmin * 1.15);
+}
+
+.ui-progressbar {
+	bottom:2.5vmin;
+    width:40vw;
+}

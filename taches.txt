@@ -1,0 +1,6 @@
+Personnage - 65%
+Vaisseaux  - 10%
+Monde      - 5%
+Textures   - 10%
+Scenario   - 90%
+Serverside - 95%

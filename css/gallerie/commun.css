@@ -1,0 +1,24 @@
+/**@@GALLERIE@@**/
+#gallerie > li > a{
+    width:100%;
+    height:100%;
+    display:block;
+    position:relative;
+}
+
+#gallerie > li > a > img{
+    overflow:hidden;
+}
+
+#gallerie{
+    list-style-type: none;
+}
+
+
+/*fix fancybox gallery*/
+/*
+.js-fancybox-index, .js-fancybox-index{
+    clear:both;
+}
+*/
+

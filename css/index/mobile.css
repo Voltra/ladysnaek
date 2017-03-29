@@ -1,0 +1,155 @@
+            /***************CONTENT***************/
+/*content container*/
+#wrapper{
+    position: relative;
+    width:90vw;
+    height:90vh;
+    margin:5vh auto;
+}
+
+
+
+/**@@LOGO@@**/
+/*logo container*/
+#logo_holder{
+    position:relative;
+    width:90vw;
+    height:calc(90vh * 30 / 100);
+}
+
+/*actual logo*/
+#logo{
+    position:absolute;
+
+    
+    /*background-image: url("../../src/img/png/logo.png");
+    background-size: contain;*/
+    background-repeat: no-repeat;
+    
+    height:25vh;
+    width:25vh;
+    border-radius:25vh;
+    
+    top:calc( (27vh - 25vh) / 2);/**voir index.css#logo pour le 27vh**/
+    left:calc( ( (90vw - 25vh) / 2 ) - 2vw);
+}
+
+
+
+
+/**@@LINKS@@**/
+/*links container*/
+#links_holder{
+    position:relative;
+    width:100%;
+    height:calc(90vh - calc(calc(90vh * 30 / 100)));/**90vh -> wrapper's height**/
+
+    text-align: center;
+}
+/*@links@*/
+/*actual links*/
+#links{
+    width:90%;
+    height:80%;
+    margin:auto;
+
+}
+
+/*list of links holders*/
+#links > ul{
+    width:100%;
+    height:100%;
+
+}
+/*indiviual link holder*/
+#links > ul > li {
+    position:relative;
+    width:100%;
+    height:25%;
+
+}
+/*individual link*/
+#links > ul > li > a{
+    position:absolute;
+    width:100%;
+    height:100%;
+    font-size: 8vh;
+    top:17.5%;
+    left:0;
+    
+    
+    /*background-color:darkorchid;*//*mainly for debug*/
+    display:block;
+}
+
+
+/*@social media@*/
+/*social medias holder*/
+#social_medias{
+    position:relative;
+    width:90%;
+    height:20%;
+    margin:auto;
+
+    
+}
+/*list of icons*/
+#social_medias > ul{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+}
+/*holder of icon*/
+#social_medias > ul > li{
+    display: block;
+    position:relative;
+    float:left;
+    width:25%;
+    height:100%;
+
+}
+
+/*social media logo*/
+.sm-logo{
+    position:absolute;
+    display:block;
+    /*background-color:aqua;*//*mainly for debug*/
+    height:10vh;
+    width:10vh;
+    margin:1.25vh calc((100% - 10vh) / 2);
+    background-size: cover;
+    /*transform: scale(0.9);*/ /*not recommended by webdev*/
+}
+
+.sm-logo#fb{
+    background-image: url("../../src/img/png/social/facebook.png");
+}
+.sm-logo#twitter{
+    background-image: url("../../src/img/png/social/twitter.png");
+}
+.sm-logo#yt{
+    background-image: url("../../src/img/png/social/youtube.png");
+}
+.sm-logo#instagram{
+    background-image: url("../../src/img/png/social/instagram.png");
+}
+.sm-logo#steam{
+    background-image: url("../../src/img/png/social/steam.png");
+}
+.sm-logo#gamejolt{
+    background-image: url("../../src/img/png/social/gamejolt.png");
+}
+
+
+#logo-txt, #logo-txt2{
+	display: none;
+    width:0;
+    height:0;
+}
+
+#logo img{
+    width:100%;
+    height:100%;
+}

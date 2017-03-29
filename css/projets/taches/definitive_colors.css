@@ -1,0 +1,38 @@
+body{
+    background-color: #3c3f41;
+}
+
+body *{
+    color:#3c3f41;
+}
+
+#taches {
+    background-color:transparent;
+}
+
+#taches > li{
+    background-color: rgba(233, 235, 238, 1);
+    box-shadow: -0.1vmin 0.3vmin 0.3vmin 0vmin rgba(0,0,0,0.35);
+}
+
+#taches > li > img{
+    box-shadow: -0.1vmin 0.3vmin 0.3vmin 0.05vmin rgba(0,0,0,0.4);
+}
+
+#taches > li > p{
+    filter: drop-shadow(0 0vmin 0.8vmin rgba(0,0,0,0.35));
+}
+
+
+
+/**@@PROGRESS BARS@@**/
+.ui-progressbar {
+	background-color: #e9ebee;
+    
+    filter: drop-shadow(-0.2vmin 0vmin 0.6vmin rgba(0,0,0,0.15));
+}
+
+.ui-progressbar-value {
+	background-color: hsl(136, 84%, 40%);/*#3c3f41*/
+    box-shadow: -0.3vmin 0 0.8vmin 0.1vmin rgba(0,0,0,1); /*x y blur disp col*/
+}   

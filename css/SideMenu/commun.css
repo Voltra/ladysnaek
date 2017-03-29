@@ -1,0 +1,177 @@
+/**@@COMMON@@**/
+*{
+/*
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    */
+
+    
+    
+    font-family: raleway;
+}
+
+#sidemenu *, #page *{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    float:left; 
+}
+
+
+
+
+/**@@BODY AND CHILDREN@@**/
+body{
+    position:relative;
+    height:100vh;
+    background-color: #e9ebee;/*background color*/
+    
+    overflow: hidden;
+}
+
+body *{
+    z-index: 1;
+/*    float:left;*/
+}
+
+
+
+/**@@SIDEBAR INTERACTIONS@@**/
+#sidemenu_opener_bar{
+    position:relative;
+    width:100vw;
+    height:10vh;
+    z-index:3;
+}
+
+/*button itself*/
+button#sm-button{
+    position:absolute;
+    border:none;
+    
+    width:10vh;
+    top:0;
+    left:0;
+    bottom:0;
+    
+    cursor:pointer;
+    
+    display:flex;
+}
+
+/*page title*/
+/*
+#page-title {
+    position:absolute;
+    text-align: left;
+    font-size:5vh;
+    
+    top:calc(50% - 2.5vh);
+    left:calc(50vw - (9 * 2.5vh));
+    
+    overflow:hidden;
+    
+    text-decoration: none;
+}
+*/
+
+#page-title{
+    width:9vh;
+    height:9vh;
+    position:absolute;
+    top:0.5vh;
+    overflow:hidden;
+    left:calc(  ( ( (100vw - 10vh) - 9vh ) / 2 )  - (10vh / 2));
+}
+
+#page-title > img{
+    width:9vh;
+    height:9vh;
+    
+    filter:drop-shadow(0 0.15vmin 0.4vmin rgba(0,0,0,0.4));
+}
+
+#title-wrap {
+	position:relative;
+    width:calc(100vw - 10vh);
+    height:10vh;
+    margin-left: 10vh;
+    
+    z-index: inherit;
+}
+
+
+
+
+
+
+/**@@SIDE MENU@@**/
+/**list**/
+#sidemenu #nav{
+	position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+}
+
+/**list element**/
+#sidemenu #nav li{
+    position: relative;
+	width:100%;
+    height:calc(100% / 5);/*because there are 5 links*/
+    
+    border-bottom: 0vmin solid rgba(60, 63, 65, 0.69);   /*hex : #e9ebee*/ 
+}
+/*
+#sidemenu #nav li:hover{
+    filter: hue-rotate(-40deg);
+    box-shadow: 0 0.6vmin 0.8vmin 0.1vmin rgba(0,0,0,0.35);
+    z-index:2;
+    border:none;
+}
+*/
+
+
+#sidemenu #nav li:last-child{
+    border-bottom: none;
+}
+/*
+#sidemenu #nav li:last-child:hover{
+    filter: hue-rotate(-40deg);
+    box-shadow: 0 -0.6vmin 0.8vmin 0.1vmin rgba(0,0,0,0.35);
+    z-index:2;
+    border:none;
+}
+*/
+
+
+
+
+
+
+/**@@PAGE@@**/
+#page{
+    /*overflow-y:scroll;*/
+    position:absolute;
+    top:0;
+    left:0;
+    margin-left:0;
+    height:100vh;/*set to auto after everyting else is done*/
+    width:100vw;
+    
+    box-shadow:0 0 0.2vmin 0.4vmin rgba(0,0,0,0.15); /*change back to 0.35 if you wanna*/
+    
+    overflow:hidden;
+}
+#page_content{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    overflow-y: scroll;
+}
+

@@ -1,0 +1,29 @@
+/**@@SIDEMENU@@**/
+#sidemenu{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;  
+    
+    width:40vw;
+    height:100vh;
+}
+
+#sidemenu a{
+    overflow:hidden;
+    
+    display:block;
+	text-decoration: none;
+    text-align: left;
+    color:#e9ebee;
+    
+    position: absolute;
+    top:7.75vh;
+    left:2vw;
+    
+    width:auto;
+    height:50%;
+    
+    font-size: 4vh;
+    font-family: raleway, monospace;
+}

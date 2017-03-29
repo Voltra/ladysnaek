@@ -1,0 +1,23 @@
+body{
+    background-color:aquamarine;
+}
+
+body *{
+    color:#000;
+}
+
+#taches{
+    background-color:rebeccapurple;
+}
+
+#taches > li{
+    background-color: cadetblue;
+}
+
+.ui-progressbar {
+	background-color: brown;
+}
+
+.ui-progressbar-value {
+	background-color: darkgoldenrod;
+}

@@ -1,0 +1,19 @@
+
+/**@@PROJET@@**/
+#projets {
+	background-color: blueviolet;
+}
+
+#projets > li{
+    background-color: burlywood;
+}
+
+
+/**@@PROGRESS BARS@@**/
+.ui-progressbar {
+	background-color: aqua;
+}
+
+.ui-progressbar-value {
+	background-color: brown;
+}

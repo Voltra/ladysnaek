@@ -1,0 +1,92 @@
+/**@@CUSTOM MODAL@@**/
+/*modal background / container*/
+#modal{
+    width:100vw;
+    height:100vh;
+    
+    background-color:rgba(0,0,0,0.69);/*definitive background*/
+    
+    position:relative;
+    
+    z-index:2000;/*background of modal*/
+    z-index: -2000;
+}
+
+#modal #hold-meh-boi {
+	z-index:2001;
+    z-index:-2001;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+#modal #sub-modal {
+	z-index:2002;
+    z-index:-2002;
+    position:relative;
+    width:90vmin;
+    height:50.625vmin;
+    
+    margin-top:calc( (100vh - 50.625vmin) / 2 );
+    margin-left:calc( (100vw - 90vmin) / 2 );
+}
+
+/*image displayed via modal*/
+#modal #sub-modal #modal-receptacle {
+	z-index:2003;/*first layer on top of background*/
+    z-index: -2003;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:0;
+    width:100%;
+    height:100%;
+    
+    filter:brightness(0.8);
+}
+
+
+/*modal buttons*/
+#modal #sub-modal #next-btn, #modal #sub-modal #prev-btn{
+    position:absolute;
+    width:10vmin;
+    height:50.625vmin; /*img height*/
+    
+    color:#000;
+    background-color: rgba(233,235,238,0.69);
+    text-shadow: 0 0 rgb(0,0,0);
+    
+    z-index:2004;
+    z-index: -2004;
+    cursor:pointer;
+    
+    transition: all 0.2s ease-in-out;
+}
+
+#modal #sub-modal #next-btn:hover, #modal #sub-modal #prev-btn:hover{
+    background-color: rgba(0,0,0,0.69);
+    color:#e9ebee;
+    
+}
+
+/*Previous button*/
+#modal #sub-modal #prev-btn {
+    top:0;/*aligned to top*/
+    left:0;/*aligned to left*/
+	
+}
+/*Next button*/
+#modal #sub-modal #next-btn {
+	top:0;/*aligned to top*/
+    right:0;/*aligned to right*/
+}
+
+/*fixing borders*/
+#modal *{
+    border:none;
+}
+
+
