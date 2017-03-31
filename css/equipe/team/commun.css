@@ -1,0 +1,42 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position:relative;
+}
+
+body *{
+    float:left;
+    z-index: 1;
+    box-sizing: border-box;
+    
+    font-family: raleway;
+    
+}
+
+
+body > *{
+    position:relative;
+}
+
+body > * > *{
+    position:absolute;
+}
+
+p#description{
+/*    overflow: hidden;*/
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+div#chibi{
+    z-index: 2;
+}
+
+div#other{
+    padding-top:2vh;
+    padding-bottom:2vh;
+    padding-left:2vw;
+    padding-right:2vw;
+}
+

@@ -2,7 +2,7 @@
 <html lang="fr-FR">
     <head>
         <!--Page Info-->
-        <title>Gallerie</title>
+        <title>Galerie</title>
         <link rel="icon" type="image/png" href="/src/img/png/favicon.png" whatIdo="icône sur l'onglet de la page (et dans les favoris)"/>
         <meta charset="utf-8" whatIdo="adapter le jeu de caractère au maximum"/>
         <meta lang="fr"/>
@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="/css/SideMenu/commun.css" whatIdo="styles du menu latéral communs à tous les supports"/>
         <link rel="stylesheet" href="/css/SideMenu/mobile.css" whatIdo="styles du menu latéral pour petites résolutions" media="screen and (max-width:768px)"/>
         <link rel="stylesheet" href="/css/SideMenu/main.css" whatIdo="styles principaux du menu latéral" media="screen and (min-width:768px)"/>
+        <link rel="stylesheet" href="/css/SideMenu/mobile.css" whatIdo="styles du menu latéral pour petites résolutions" media="all and (orientation: portrait)" class="stylesheet" id="mobile"/>
         <link rel="stylesheet" href="/css/SideMenu/hamburger.css" whatIdo="créer le bouton pour ouvrir le menu latéral"/>
         
         
@@ -62,12 +63,14 @@
         
         
         <!--Custom made Scripts-->
+        <script src="/js/preload_img.js" type="text/javascript" whatIdo="script pour précharge des images pour une meilleure expérience utilisateur"></script>
         <script src="/js/SideMenu/reveal.js" type="text/javascript" whatIdo="ouvrir/fermer le menu latéral"></script>
         <script src="/js/clickLI.js" type="text/javascript" whatIdo="rendre les LI cliquables"></script>
         <script src="/js/gallerie/link-LI.js" type="text/javascript" whatIdo="faire en sorte que les éléments de liste soient cliquables (en plus du lien en lui-même)"></script>
         <script src="/js/SideMenu/script.js" type="text/javascript" whatIdo="animer l'icone menu"></script>
         <script src="/js/gallerie/updateTags.js" type="text/javascript" whatIdo="créer le html manquant de façon dynamique"></script>
         <script src="/js/SideMenu/disable_link.js" type="text/javascript" whatIdo="désactiver le lien de la page actuelle"></script>
+        <script src="/js/gallerie/preloadImages.js" type="text/javascript" whatIdo="défini les images à précharger"></script>
         
         
         <script whatIdo="effacer la console">

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <!--page info-->
+        <title>Équipe</title>
+        <link rel="icon" href="/src/img/png/logo.png" type="image/png"/>
+        <meta charset="utf-8" whatIdo="adapter le jeu de caractères au maximum"/>
+        <meta lang="fr"/>
+        <meta name="author" content="Voltra - Ludwig GUERIN"/>
+        <meta name="keywords" content="ladysnake, equipe, équipe"/>
+        
+        <!--important META-->
+        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" whatIdo="adaptation au support"/>
+        
+        <!--stylesheets-->
+        <link rel="stylesheet" href="/css/reset.css" whatIdo="réinitialiser les styles par défaut du navigateur"/>
+        <link rel="stylesheet" href="/css/clear_float.css" whatIdo="réinitiliser le flux(float) de la page"/>
+        
+        <link rel="stylesheet" href="/css/font-load.css" whatIdo="charger les polices de caractères"/>
+        
+        
+        <link rel="stylesheet" href="/css/SideMenu/commun.css" whatIdo="styles du menu latéral communs à tous les supports"/>
+        <link rel="stylesheet" href="/css/SideMenu/mobile.css" whatIdo="styles du menu latéral pour petites résolutions" media="all and (max-width:768px)" class="stylesheet" id="main"/>
+        <link rel="stylesheet" href="/css/SideMenu/main.css" whatIdo="styles principaux du menu latéral" media="all and (min-width:768px)"/>
+        <link rel="stylesheet" href="/css/SideMenu/mobile.css" whatIdo="styles du menu latéral pour petites résolutions" media="all and (orientation: portrait)" class="stylesheet" id="mobile"/>
+        <link rel="stylesheet" href="/css/SideMenu/hamburger.css" whatIdo="créer le bouton pour ouvrir le menu latéral"/>
+        
+        
+        <link rel="stylesheet" href="/css/equipe/commun.css" whatIdo="styles communs à tous les supports"/>
+        <link rel="stylesheet" href="/css/equipe/main.css" whatIdo="styles principaux"  media="screen and (min-width:768px)"/>
+        <link rel="stylesheet" href="/css/equipe/mobile.css" whatIdo="styles pour petites résolutions" media="screen and (max-width:768px)"/>
+        <link rel="stylesheet" href="/css/equipe/mobile.css" whatIdo="adapter le style pour l'orientation portrait" media="screen and (orientation:portrait)"/>
+        
+        
+        <link rel="stylesheet" href="/css/equipe/definitive_colors.css" whatIdo="couleurs définitives"/>
+        <link rel="stylesheet" href="/css/SideMenu/definitive_colors.css" whatIdo="couleurs définitives du menu latéral"/>
+<!--        <link rel="stylesheet" href="/css/equipe/debug.css" whatIdo="Debug pour développeur"/>-->
+<!--        <link rel="stylesheet" href="/css/SideMenu/debug.css" whatIdo="Debug menu latéral pour développeur"/>-->
+        <link rel="stylesheet" href="/css/fancybox.css" whatIdo="modal les images"/>
+        
+        
+        
+        <!--Regular Scripts-->
+        <script src="/js/jquery.js" type="text/javascript" whatIdo="simplifier le JS"></script>
+        <script src="/js/jq-plugins/rotation.js" type="text/javascript" whatIdo="effectuer des rotations d'éléments w/ JQuery"></script>
+        <script src="/js/jq-plugins/transit.js" type="text/javascript" whatIdo="simplifier les transitions w/ JQuery"></script>
+        <script src="/js/jq-plugins/Vague.js" type="text/javascript" whatIdo="créer un flou"></script>
+        <script src="/js/jq-plugins/fancybox.js" type="text/javascript" whatIdo="modal les images"></script>
+        
+        
+        <!--Custom made Scripts-->
+        <script src="/js/preload_img.js" type="text/javascript" whatIdo="script pour précharge des images pour une meilleure expérience utilisateur"></script>
+        <script src="/js/SideMenu/reveal.js" type="text/javascript" whatIdo="ouvrir/fermer le menu latéral"></script>
+        <script src="/js/clickLI.js" type="text/javascript" whatIdo="rendre les LI cliquables"></script>
+        <script src="/js/SideMenu/disable_link.js" type="text/javascript" whatIdo="désactiver le lien de la page actuelle"></script>
+        <script src="/js/SideMenu/script.js" type="text/javascript" whatIdo="animer l'icone menu"></script> 
+        <script src="/js/equipe/link-LI.js" type="text/javascript" whatIdo="rendre les LI clickables en plus des A"></script>
+        <script src="/js/equipe/preloadImages.js" type="text/javascript" whatIdo="défini les images à précharger"></script>
+        <script src="/js/equipe/updateTags.js" type="text/javascript" whatIdo="créer le html manquant de façon dynamique"></script>
+    </head>
+    <body>
+        <div id="sidemenu" role="navigation">
+            <ul id="nav">
+                <li>
+                    <a href="/index.html">accueil</a>
+                </li>
+
+                <li>
+                    <a href="/projets.html">projets</a>
+                </li>
+
+                <li>
+                    <a href="/galerie.html">galerie</a>
+                </li>
+
+                <li>
+                    <a nopified="1">équipe</a>
+                </li>
+
+                <li>
+                    <a href="/jeux.html">jeux</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="page">
+            <div id="sidemenu_opener_bar">
+                <button id="sm-button">
+                    <span id="sw-holder">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <div id="title-wrap">
+                        <a href="/index.html" id="page-title"><img src="/src/img/png/logo.png" alt="logo"/></a>
+                </div>
+            </div>
+
+            <div id="page_content">
+                <ul id="team">
+                    <li class="membre" id="Mludwig">
+                        <a>
+                            <img class="chibi" src="/src/img/png/chibi/ludwig.png" alt="chibi ludwig"/>
+                            <img class="software_icon SI_un" class="SI_un" src="/src/img/png/software_icons/brackets_icon.png" alt="Brackets"/>
+                            <img class="software_icon SI_deux" class="SI_deux" src="/src/img/png/software_icons/vegaspro.png" alt="Sony Vegas Pro"/>
+                        </a>
+                    </li>
+                    <li class="info" id="Iludwig"></li>
+                    
+                    
+                    <li class="membre" id="Mfabien">
+                        <a>
+                        <img class="chibi" src="/src/img/png/chibi/fabien.png" alt="chibi fabien"/>
+                        <img class="software_icon SI_un" class="SI_un" src="/src/img/png/software_icons/after%20effects.png" alt="After Effect"/>
+                        <img class="software_icon SI_deux" class="SI_deux" src="/src/img/png/software_icons/eclipse.png" alt="eclipse"/>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="membre" id="Mromain">
+                        <a>
+                            <img class="chibi" src="/src/img/png/chibi/romain.png" alt="chibi roumain"/>
+                            <img class="software_icon SI_un" class="SI_un" src="/src/img/png/software_icons/gamemaker.png" alt="GameMaker Studio"/>
+                            <img class="software_icon SI_deux" class="SI_deux" src="/src/img/png/software_icons/painttoolsai.png" alt="Paint Tool Sai"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

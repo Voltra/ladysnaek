@@ -1,6 +1,6 @@
-$(document).ready(clickLI);
+$(document).ready(clickThoseLI);
 
-function clickLI(){
+function clickThoseLI(){
     var LI = $("#sidemenu").children("#nav").children("li");
     
     LI.each(makeLIclickable);

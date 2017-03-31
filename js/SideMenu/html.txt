@@ -2,7 +2,7 @@
 	<div id="sidemenu" role="navigation">
 		<ul id="nav">
 			<li>
-				<a href="index.html">accueil</a>
+				<a href="/index.html">accueil</a>
 			</li>
 			
 			<li>
@@ -10,7 +10,7 @@
 			</li>
 			
 			<li>
-				<a href="galerie.html">galerie</a>
+				<a href="/galerie.html">galerie</a>
 			</li>
 			
 			<li>
@@ -35,7 +35,7 @@
 			</button>
 			
 			<div id="title-wrap">
-                    <a href="index.html" id="page-title"><img src="src/img/png/logo.png" alt="logo"/></a>
+                    <a href="/index.html" id="page-title"><img src="/src/img/png/logo.png" alt="logo"/></a>
             </div>
 		</div>
 		

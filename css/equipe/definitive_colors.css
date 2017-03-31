@@ -1,0 +1,19 @@
+#Mludwig {
+	background-color:#05b8e6;
+}
+
+#Mfabien {
+	background-color: #3545c1;
+}
+
+#Mromain {
+	background-color: #ff0649;
+}
+
+.membre{
+    border:none;
+}
+
+.software_icon{
+    filter:drop-shadow(0 0.8vmin 0.4vmin rgba(0,0,0,0.35));
+}

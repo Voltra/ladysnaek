@@ -1,0 +1,97 @@
+div#chibi{
+    width:100vw;
+    height:20vh;
+}
+
+div#other{
+    width:100vw;
+    height:80vh;
+}
+
+div#chibi > img{
+    width:calc(20vh * 0.8); /*0.8 * div min*/
+    height:auto;
+    
+    top:calc((20vh - (20vh * 0.8)) / 2); /*calc((div_heigt - self_height) / 2)*/
+    left:calc((100vw - (20vh * 0.8)) / 2); /*calc((div_width - self_width) / 2)*/
+}
+
+div#other > #desc{
+    padding:1vmin;
+    
+    width:calc(100vw - 4vw);/*self_width(without padding) - 4vw*/
+    height:calc(40vh - 4vw);
+}
+
+#desc > #description {
+	font-size:calc((40vh - 4vw) / 12);
+    line-height:calc(((40vh - 4vw) / 12) + 1.5vmin);
+    
+    width:calc(100vw - 4vw);
+    height:calc((40vh - 4vw) - ((50vh - 4vw) / 7) - 2vmin);
+    margin-top:2vmin;
+}
+
+#desc > #nom {
+	font-size:calc((40vh - 4vw) / 6);
+}
+
+div#other > #softwares{
+    width:calc(100vw - 4vw);
+    height:calc(40vh - 4vw);
+    
+    bottom:2vh;
+    
+    padding:1vmin
+}
+
+#softwares > #softwares_holder{
+	width:calc(100vw - 4vw - 2vmin);
+    height:calc(40vh - 4vw - 2vmin);
+    position:relative;
+}
+
+div#other > #softwares > #softwares_holder > #titre{
+    width:calc(100vw - 4vw - 2vmin);
+    height:auto;
+    
+    font-size:calc((40vh - 4vw) / 8);
+    text-transform: uppercase;
+}
+
+
+#softwares > #softwares_holder > #sw1, #softwares > #softwares_holder > #sw2{
+    position:absolute;
+	height:calc((40vh - 4vw) * 0.75);
+    bottom:calc(( (40vh - 4vw - 2vmin) - ((40vh - 4vw) / 8) - ((40vh - 4vw) * 0.75)) / 2);
+    left:2vw;
+}
+
+#softwares > #softwares_holder > #sw2{
+    position: absolute;
+    right:2vw;
+    left:auto;
+}
+
+#desc1{
+    position:absolute;
+    left:calc(2vw + 2vw + ((40vh - 4vw) * 0.75));
+    top:calc((( (40vh - 4vw - 2vmin) - ((40vh - 4vw) / 8) - ((40vh - 4vw) * 0.75)) / 2) + ((40vh - 4vw) / 8));
+    
+    font-size: 3vh;
+    
+    width:calc(((100vw - 4vw - 2vmin) - (2 * ((40vh - 4vw) * 0.75) - 4vw)) / 2);
+    height:calc((40vh - 4vw - 2vmin) / 3);
+}
+
+#desc2{
+    position:absolute;
+    right:calc(2vw + 2vw + ((40vh - 4vw) * 0.75));
+    bottom:calc(( (40vh - 4vw - 2vmin) - ((40vh - 4vw) / 8) - ((40vh - 4vw) * 0.75)) / 2);
+    
+    font-size:3vh;
+    
+    width:calc(((100vw - 4vw - 2vmin) - (2 * ((40vh - 4vw) * 0.75) - 4vw)) / 2);
+    height:calc((40vh - 4vw - 2vmin) / 3);
+    text-align: right;
+}

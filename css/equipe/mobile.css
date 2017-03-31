@@ -1,0 +1,32 @@
+.membre{
+    width:95vw;
+    height:calc(95vh / 3);
+}
+
+.chibi{
+    width:calc((95vh / 3) * 0.8);
+    height:calc((95vh / 3)* 0.8);
+    
+    
+    top:calc(((95vh / 3) - ((95vh / 3) * 0.8)) / 2);
+    left:5vw;
+    
+    
+    border-radius: calc((95vh / 3) * 0.8);
+}
+
+.software_icon {
+    width:calc((95vw / 3) * 0.4);
+    height:auto;
+	bottom:calc(((95vh / 3) - ((95vw / 3) * 0.4)) / 2);
+}
+
+.SI_un{
+    right:calc(5vw + calc((95vw / 3) * 0.4) + 5vw);
+    left:auto;
+}
+
+.SI_deux {
+	right:5vw;
+    left:auto;
+}

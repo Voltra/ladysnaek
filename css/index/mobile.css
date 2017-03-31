@@ -124,22 +124,22 @@
 }
 
 .sm-logo#fb{
-    background-image: url("../../src/img/png/social/facebook.png");
+    background-image: url("/src/img/png/social/facebook.png");
 }
 .sm-logo#twitter{
-    background-image: url("../../src/img/png/social/twitter.png");
+    background-image: url("/src/img/png/social/twitter.png");
 }
 .sm-logo#yt{
-    background-image: url("../../src/img/png/social/youtube.png");
+    background-image: url("/src/img/png/social/youtube.png");
 }
 .sm-logo#instagram{
-    background-image: url("../../src/img/png/social/instagram.png");
+    background-image: url("/src/img/png/social/instagram.png");
 }
 .sm-logo#steam{
-    background-image: url("../../src/img/png/social/steam.png");
+    background-image: url("/src/img/png/social/steam.png");
 }
 .sm-logo#gamejolt{
-    background-image: url("../../src/img/png/social/gamejolt.png");
+    background-image: url("/src/img/png/social/gamejolt.png");
 }
 
 

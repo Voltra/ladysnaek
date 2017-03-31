@@ -1,0 +1,27 @@
+body{
+    background-color: blanchedalmond;
+}
+
+div#chibi{
+    background-color:aqua;
+}
+
+div#other{
+    background-color: chocolate;
+}
+
+div#description{
+    background-color: darkgray;
+}
+
+div#softwares{
+    background-color: darkblue;
+}
+
+h2#titre{
+    background-color:blanchedalmond;
+}
+
+#desc1, #desc2{
+    background-color: cornflowerblue;
+}

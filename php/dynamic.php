@@ -4,7 +4,7 @@
     </head>
     <body>
         <?php
-            echo "starting file upload...";
+//            echo "starting file upload...";
         
             $vars = serialize($_POST);
         
@@ -15,7 +15,7 @@
             fwrite($fh, $file_content."\n");
             fclose($fh);
             
-            echo "...ended"
+//            echo "...ended"
         ?>
     </body>
 </html>
