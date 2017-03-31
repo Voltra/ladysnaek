@@ -7,11 +7,13 @@ body#ludwig{
 }
 body#fabien{
     background-color: #3545c1;
-    color:#252728;
+/*    color:#252728;*/
+    color:#e9ebee;
 }
 body#romain{
     background-color: #ff0649;
-    color:#000;
+/*    color:#000;*/
+    color:#e9ebee;
 }
 
 

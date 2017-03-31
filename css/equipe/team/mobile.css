@@ -14,6 +14,8 @@ div#chibi > img{
     
     top:calc((20vh - (20vh * 0.8)) / 2); /*calc((div_heigt - self_height) / 2)*/
     left:calc((100vw - (20vh * 0.8)) / 2); /*calc((div_width - self_width) / 2)*/
+    
+    border-radius: calc(20vh * 0.8);
 }
 
 div#other > #desc{
