@@ -1,12 +1,14 @@
 var img_arr =[
-    "/src/img/png/logo.png",
-    "/src/img/png/chibi/ludwig.png",
-    "/src/img/png/chibi/fabien.png",
-    "/src/img/png/chibi/romain.png",
-    "/src/img/png/software_icons/brackets_icon.png",
-    "/src/img/png/software_icons/after%20effects.png",
-    "/src/img/png/software_icons/gamemaker.png",
-    "/src/img/png/software_icons/painttoolsai.png"
+    "/src/img/svg/logo.svg",
+    "/src/img/svg/chibi/ludwig.svg",
+    "/src/img/svg/chibi/fabien.svg",
+    "/src/img/svg/chibi/romain.svg",
+    "/src/img/svg/software_icons/brackets.svg",
+    "/src/img/svg/software_icons/vegaspro.svg",
+    "/src/img/svg/software_icons/ae.svg",
+    "/src/img/svg/software_icons/eclipse.svg",
+    "/src/img/svg/software_icons/gamemaker.svg",
+    "/src/img/svg/software_icons/painttoolsai.svg"
 ];
 
 preloadImages(img_arr);

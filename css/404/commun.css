@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    
+    font-family: raleway, roboto;
+    
+    cursor:pointer;
+}
+
+#holder{
+    width:80vw;
+    height:80vh;
+    margin-top:10vh;
+    margin-left:10vw;
+    
+    box-sizing: border-box;
+    
+    position:relative;
+}
+
+
+#img{
+    width:80vmin;
+    height:80vmin;
+    
+    position: absolute;
+    top:calc((80vh - 80vmin) / 2);
+    left:calc((80vw - 80vmin) / 2);
+    
+    background-image: url("/src/img/svg/logo.svg");
+    background-size: contain;
+    
+    
+}
+
+p#txt{
+    width:80vmin;
+    height:calc(100vh - 80vmin);
+    
+    position:absolute;
+    top:0;
+    left:0;
+    font-size: 4vmin;
+    line-height: 4.3vmin;
+}

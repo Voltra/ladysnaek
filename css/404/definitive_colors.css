@@ -1,0 +1,12 @@
+body{
+    background-color: #e9ebee;
+}
+
+#img{
+    filter:drop-shadow(0 0 0.4vmin rgba(0,0,0,0.4));
+}
+
+#txt{
+    color:#3c3f41;
+    text-shadow: 0 0.2vmin 0.4vmin rgba(0,0,0,0.4);
+}

@@ -3,7 +3,7 @@
     <head>
         <!--page info-->
         <title>Projets</title>
-        <link rel="icon" href="/src/img/png/logo.png" type="image/png"/>
+        <link rel="icon" href="/src/img/svg/favicon.svg"/>
         <meta charset="utf-8" whatIdo="adapter le jeu de caractères au maximum"/>
         <meta lang="fr"/>
         <meta name="author" content="Voltra - Ludwig GUERIN"/>
@@ -57,10 +57,13 @@
 <!--        <script src="js/jq-plugins/jq-mobile.js" type="text/javascript" whatIdo="optimisation de l'interactivité des supports mobiles et tactiles"></script>-->
         <script src="/js/jq-plugins/fancybox.js" type="text/javascript" whatIdo="modal les images"></script>
         <script src="/js/FileSaver.js" type="text/javascript" whatIdo="création dynamique de pages"></script>
+        <script src="/js/jq-plugins/niceScroll.js" type="text/javascript" whatIdo="custom scrollbar"></script>
         
         
         
         <!--Custom made Scripts-->
+        <script src="/js/preload_img.js" type="text/javascript" whatIdo="script pour précharge des images pour une meilleure expérience utilisateur"></script>
+        <script src="/js/projets/preloadImages.js" type="text/javascript" whatIdo="défini les images à précharger"></script>
         <script src="/js/SideMenu/reveal.js" type="text/javascript" whatIdo="ouvrir/fermer le menu latéral"></script>
         <script src="/js/clickLI.js" type="text/javascript" whatIdo="rendre les LI cliquables"></script>
         <script src="/js/SideMenu/disable_link.js" type="text/javascript" whatIdo="désactiver le lien de la page actuelle"></script>
@@ -72,7 +75,8 @@
         <script src="/js/projets/dynamicPB.js" type="text/javascript" whatIdo="gère de façon dynamique les barres de progression"></script>
         <script src="/js/projets/createSubProj.js" type="text/javascript" whatIdo="crée dynamiquement les pages"></script>
         <script src="/js/projets/AJAXprogressBars.js" type="text/javascript" whatIdo="facilite la gestion des barres de progression"></script>
-<!--        <script src="js/stylesheet_switcher.js" type="text/javascript" whatIdo="optimiser le responsive"></script>-->
+        <script src="/js/scrollbar/page_content.js" type="text/javascript" whatIdo="paramètres scrollbar"></script>
+
     </head>
     
     <body>
@@ -95,7 +99,7 @@
                 </li>
 
                 <li>
-                    <a href="/jeux.html">jeux</a>
+                    <a href="/404.html">jeux</a>
                 </li>
             </ul>
         </div>
@@ -112,7 +116,7 @@
                 </button>
 
                 <div id="title-wrap">
-                        <a href="/index.html" id="page-title"><img src="/src/img/png/logo.png" alt="logo"/></a>
+                        <a href="/index.html" id="page-title"><img src="/src/img/svg/logo.svg" alt="logo"/></a>
                 </div>
             </div>
 

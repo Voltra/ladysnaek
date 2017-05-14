@@ -19,7 +19,8 @@ ul#team{
     left:2.5vw;
     
     z-index:1;
-    transform: scale(0.9) skewY(-0.4deg);
+    transform: scale(0.8) skewY(-0.4deg);
+    overflow: hidden;
 /*    transform: skewY(-0.5deg);*/
 }
 

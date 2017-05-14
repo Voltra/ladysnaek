@@ -1,6 +1,6 @@
 var img_arr = [
-    "/src/img/png/favicon.png",
-    "src/img/png/logo.png",
+    "/src/img/svg/favicon.svg",
+    "src/img/svg/logo.svg",
     "/photoshop/test1.png",
     "/photoshop/test2.png",
     "/photoshop/test3.png",

@@ -1,5 +1,5 @@
 .membre{
-    width:calc(95vw / 3);
+    width:calc(95vw / 3 - 1vmin);/*le -1vmin = hotfix tout moisi mais ça marche*/
     height:95vh;
 }
 
@@ -25,6 +25,7 @@
 
 .SI_un{
     left:calc((95vw / 9) / 2);
+    right:auto;
 }
 
 .SI_deux {

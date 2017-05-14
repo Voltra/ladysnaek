@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr-FR">
+    <head>
+        <title>Erreur 404</title>
+        <link rel="icon" href="/src/img/svg/logo.svg"/>
+        
+        
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, height=device-height, shrink-to-fit=no"/>
+        
+        <link rel="stylesheet" href="/css/reset.css"/>
+        <link rel="stylesheet" href="/css/font-load.css"/>
+        <link rel="stylesheet" href="/css/404/commun.css"/>
+        <link rel="stylesheet" href="/css/404/definitive_colors.css"/>
+        
+        <script src="/js/jquery.js"></script>
+        <script src="/js/preload_img.js"></script>
+        <script>
+            preloadImages(["/src/img/svg/logo.svg"]);
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("body, html").on('click',function(){
+                    document.location.href="/index.html";
+                });
+                
+                $("body  *, html").each(bindclick404);
+            });
+            
+            function bindclick404(index, elem){
+                var $this = $(this);
+                
+                $this.css('cursor','pointer');
+                
+                $this.on('click',function(){
+                    document.location.href="/index.html";
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <div id="holder">
+            <div id="img">
+            </div>
+            <p id="txt">
+                Erreur 404 : Cliquez sur la page pour revenir à l'accueil
+            </p>
+        </div>
+    </body>
+</html>

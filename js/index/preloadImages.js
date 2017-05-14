@@ -1,9 +1,9 @@
 var img_arr = [
-    "/src/img/png/logo.png",
-    "/src/img/png/social/youtube.png",
-    "/src/img/png/social/twitter.png",
-    "/src/img/png/social/steam.png",
-    "/src/img/png/social/gamejolt.png"
+    "/src/img/svg/logo.svg",
+    "/src/img/svg/social/youtube.svg",
+    "/src/img/svg/social/twitter.svg",
+    "/src/img/svg/social/steam.svg",
+    "/src/img/svg/social/gamejolt.svg"
     
 ];
 

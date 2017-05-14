@@ -34,6 +34,9 @@
     left:calc( ( (90vw - 25vh) / 2 ) - 2vw);
 }
 
+#logo img{
+    margin-left: 10%;
+}
 
 
 
@@ -127,10 +130,10 @@
     background-image: url("/src/img/png/social/facebook.png");
 }
 .sm-logo#twitter{
-    background-image: url("/src/img/png/social/twitter.png");
+    background-image: url("/src/img/svg/social/twitter.svg");
 }
 .sm-logo#yt{
-    background-image: url("/src/img/png/social/youtube.png");
+    background-image: url("/src/img/svg/social/youtube.svg");
 }
 .sm-logo#instagram{
     background-image: url("/src/img/png/social/instagram.png");
@@ -139,7 +142,7 @@
     background-image: url("/src/img/png/social/steam.png");
 }
 .sm-logo#gamejolt{
-    background-image: url("/src/img/png/social/gamejolt.png");
+    background-image: url("/src/img/svg/social/gamejolt.svg");
 }
 
 
