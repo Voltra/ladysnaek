@@ -1,0 +1,25 @@
+/**@@VARIABLES@@**/
+:root{
+    --MAIN-section-title-fontSize: 5vmin;
+    --MAIN-section-text-fontSize: 3vmin;
+    --MAIN-wiki-width: 8vw;
+}
+
+
+img#wiki-logo{
+    width: var(--MAIN-wiki-width);
+}
+
+h1.section_title{
+    font-size: var(--MAIN-section-title-fontSize);
+}
+
+p.text{
+    font-size: var(--MAIN-section-text-fontSize);
+    line-height: calc(var(--MAIN-section-text-fontSize) + 1vmin);
+}
+
+h3.summary-title{
+    font-size: calc(var(--MAIN-section-title-fontSize) * 0.9);
+}
+

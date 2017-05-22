@@ -21,27 +21,28 @@
         <link rel="stylesheet" href="/css/font-load.css" whatIdo="charger les polices de caractères"/>
         
         
-        <link rel="stylesheet" href="/css/SideMenu/commun.css" whatIdo="styles du menu latéral communs à tous les supports"/>
+        <link rel="stylesheet" href="/css/SideMenu/commun_wiki.css" whatIdo="styles du menu latéral communs à tous les supports"/>
         <link rel="stylesheet" href="/css/SideMenu/mobile.css" whatIdo="styles du menu latéral pour petites résolutions" media="screen and (max-width:768px)"/>
         <link rel="stylesheet" href="/css/SideMenu/main.css" whatIdo="styles principaux du menu latéral" media="screen and (min-width:768px)"/>
         <link rel="stylesheet" href="/css/SideMenu/mobile.css" whatIdo="styles du menu latéral pour petites résolutions" media="all and (orientation: portrait)" class="stylesheet" id="mobile"/>
         <link rel="stylesheet" href="/css/SideMenu/hamburger.css" whatIdo="créer le bouton pour ouvrir le menu latéral"/>
         
         
-        <!--<link rel="stylesheet" href="/css/gallerie/commun.css" whatIdo="styles communs à tous les supports"/>
-        <link rel="stylesheet" href="/css/gallerie/main.css" whatIdo="styles principaux"  media="screen and (min-width:768px)"/>
-        <link rel="stylesheet" href="/css/gallerie/mobile.css" whatIdo="styles pour petites résolutions" media="screen and (max-width:768px)"/>
-        <link rel="stylesheet" href="/css/gallerie/mobile.css" whatIdo="styles pour l'orientation portrait" media="screen and (orientation:portrait)"/>-->
-        <!--TODO: stylesheets here-->
+        <link rel="stylesheet" href="/css/wiki/commun.css" whatIdo="styles communs à tous les supports"/>
+        <link rel="stylesheet" href="/css/wiki/main.css" whatIdo="styles principaux"  media="screen and (min-width:768px)"/>
+        <link rel="stylesheet" href="/css/wiki/mobile.css" whatIdo="styles pour petites résolutions" media="screen and (max-width:768px)"/>
+        <link rel="stylesheet" href="/css/wiki/mobile.css" whatIdo="styles pour l'orientation portrait" media="screen and (orientation:portrait)"/>
         
         
         
 
         
-        <!--TODO: definitive_colors wiki here-->
+        
+        <link rel="stylesheet" href="/css/wiki/definitive_colors.css" whatIdo="couleurs définitives"/>
         <link rel="stylesheet" href="/css/SideMenu/definitive_colors.css" whatIdo="couleurs définitives du menu latéral"/>
-        <!--TODO: debug wiki here-->
-        <!--<link rel="stylesheet" href="/css/SideMenu/debug.css" whatIdo="Debug menu latéral pour développeur/>-->
+        
+<!--        <link rel="stylesheet" href="/css/SideMenu/debug.css" whatIdo="Debug menu latéral pour développeur"/>-->
+<!--        <link rel="stylesheet" href="/css/wiki/debug.css" whatIdo="Debug pour développeurs"/>-->
         
         <link rel="stylesheet" href="/css/fancybox.css" whatIdo="modal les images"/>
 
@@ -69,7 +70,7 @@
         <script src="/js/preload_img.js" type="text/javascript" whatIdo="script pour précharge des images pour une meilleure expérience utilisateur"></script>
         <script src="/js/SideMenu/reveal.js" type="text/javascript" whatIdo="ouvrir/fermer le menu latéral"></script>
         <script src="/js/clickLI.js" type="text/javascript" whatIdo="rendre les LI cliquables"></script>
-        <!--TODO: insert linkLI here-->
+        <script src="/js/wiki/link-LI.js" type="text/javascript" whatIdo="faire en sorte que le LI voulus soit cliquable en plus du A(lien)"></script>
         <script src="/js/SideMenu/script.js" type="text/javascript" whatIdo="animer l'icone menu"></script>
         <script src="/js/SideMenu/disable_link.js" type="text/javascript" whatIdo="désactiver le lien de la page actuelle"></script>
         <script src="/js/scrollbar/page_content.js" type="text/javascript" whatIdo="paramètres scrollbar"></script>
@@ -119,13 +120,100 @@
                 </button>
                 
                 <div id="title-wrap">
-                    <a href="/index.html" id="page-title"><img src="src/img/svg/logo.svg" alt="logo"/></a>
+                    <a href="/index.html" id="page-title"><img src="/src/img/svg/logo.svg" alt="logo"/></a>
                 </div>
             </div>
             
             <div id="page_content">
                 <!--TODO: content here lmao-->
-            </div>
+                <div id="wiki_content">
+                    <img src="/src/img/svg/wiki/logo.svg" alt="logo wiki" id="wiki-logo"/>
+                    <div class="section">
+                        <h1 class="section_title">Ceci est un titre de section</h1>
+                        <p class="text">
+                            This is a sample text, here's a modified portion of the text : <del>this gender fluid person</del> <ins>he</ins> is born dovahkiin.<b>Everyone</b>, ring the <del>Clock</del> Bell. Some char char char char char char char char char char char char. Here's the new to line tag :<br/>
+                            <br/>
+                            Prior to this, there's a "new paragraph" thingie. Now fuck off will ya, here's some <b>Lorem Ipsum</b> biatch !<br/>
+                            <br/>
+                            (Marty takes a shot and it's way off the mark.) Hey listen, can I try that again? Sure, go ahead. (Marty shoots several times and each time he hits his mark. The salesman is at a loss as Marty holds the gun back out to him.) Hey, just tell me one thing...where'd you learn to shoot like that?<br/><!--carriage return-->
+                            <br/><!--skip line-->
+                            (We cut to 2015 Biff as he remembers this.) (v.o) I had to pay Old Man Jones 80 bucks to haul it away! (v.o) Old Man Jones? He probably resold it too! Now I ought to get something for that. (Cut back to 1955 Biff and Terry.) Wanna get something for it? Well, go inside, you can call Old Man Jones and if you want us to give you a refund...<br/>
+                            <br/>
+                            What did your mother ever see in that kid? I don't know, Doc, I guess she felt sorry for him cause her did hit him with the car…(pause)…hit me with the car. That's a Florence Nightingale effect. It happens in hospitals when nurses fall in love with their patients. Go to it, kid. (Marty walks over to George.) Hey George, buddy, hey, I've been looking all over for you. You remember me, the guy who saved your life the other day.<br/>
+                            <br/>
+                            (He throws it in the back, it lands near Marty. Marty is about to grab it when 2015 Biff grabs the book without seeing Marty.) You damned fool! (The two get out of the car.) Never, never leave this book lying around! Don't you have a safe? (realizes) No, you don't have a safe. Get a safe! Keep it locked up, and until then keep it on you like this. (He puts the book in 1955 Biff's back jeans pocket.) Hey, what're ya doing? And don't tell anyone about it either. Oh, and there's one more thing. (During the following 1955 Biff closes the garage door, and the Biffs leave the garage.) One day, a kid, or a crazy wild-eyed scientist who claims to be a scientist is gonna come around asking about that book... (They walk off, continuing their conversation. Marty tries to open the door - but it's locked! And we see the outside padlock to prove it. Marty looks up at the windows, but they're far too small for him to climb out of.)<br/>
+                            <br/>gh hyuuuuuuuuhhyhynhyuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+                        </p>
+                    </div><!--section #1-->
+                    
+                    <div class="section">
+                        <h1 class="section_title">Ceci est un autre titre de section</h1>
+                        <p class="text">
+                            <a href="http://youtube.com">Fuck off m8</a>, oh and this was a link and a totally different section, a section <abbr title="ALWAYS">should</abbr> <b>always</b> have a title but fuck this shit <i>am</i> out <b>bitch</b>.<br/>
+                            <br/>
+                            Here are your options biatch :<br/>
+                            <b>bold</b> <i>italic</i> <del>removal</del> <ins>insertion</ins> <a href="javascript:void(0)">link</a> <abbr title="abbreviation">abbr</abbr>
+                        </p>
+                        
+                        <img src="/src/img/png/favicon.png" alt="alternative text" class="section_imgL"/>
+                        <p class="section_imgL_legende">Légende gauche</p><!--LEFT-->
+                        <img src="/src/img/png/favicon.png" alt="alternative text" class="section_imgC"/>
+                        <p class="section_imgC_legende">Légende centre</p><!--CENTER-->
+                        <img src="/src/img/png/favicon.png" alt="alternative text" class="section_imgR"/>
+                        <p class="section_imgR_legende">Légende droite</p><!--RIGHT-->
+                    </div><!--section #2-->
+                    
+                    <div class="summary">
+                        <h3 class="summary-title">Ceci est un titre de sommaire</h3>
+                        <ul class="main-summary">
+                            <li>
+                                <a href="javascript:void(0)">Menu 0 Part 1</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Menu 0 Part 2</a>
+                                <ul class="sub-summary">
+                                    <li>
+                                        <a href="javascript:void(0)">Menu 1 Part 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Menu 1 Part 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Menu 0 Part 3</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Menu 0 Part 4</a>
+                                <ul class="sub-summary">
+                                    <li>
+                                        <a href="javascript:void(0)">Menu 1 Part 1</a>
+                                        <ul class="sub-summary">
+                                            <li>
+                                                <a href="javascript:void(0)">Menu 2 Part 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)">Menu 2 Part 2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Menu 1 Part 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--sommaire-->
+                    
+                    <div class="section-infobox">
+                        <div class="left"></div>
+                        <div class="right">
+                            <h3>Titre d'infobox</h3>
+                            <img src="/src/img/png/favicon.png" alt="ntm"/>
+                        </div>
+                    </div>
+                </div><!--wiki_content-->
+            </div><!--page_content-->
         </div>
         
         <clear_float></clear_float> <!--clear_float custom HTML tag-->

@@ -1,0 +1,29 @@
+:root{
+    --img-shadow-U: inset 0 0vmin 2vmin 0 rgba(0,0,0,0.08);
+    --link-color:#0e7daf;
+    --material-shadow: 0 0.4vmin 0.4vmin 0.2vmin rgba(0,0,0,0.15);
+    --wiki-logo-shadow: 0 0.4vmin 0.4vmin rgba(0,0,0,0.15);
+}
+
+
+img#wiki-logo{
+    filter: drop-shadow(var(--wiki-logo-shadow));
+}
+
+
+p.text > a{
+    color: var(--link-color);
+}
+
+img.section_imgC, img.section_imgL, img.section_imgR{
+    box-shadow: var(--img-shadow-U);
+}
+
+ul.main-summary a{
+    color: var(--link-color);
+}
+
+div.summary{
+    outline: 2px solid var(--front-color);
+    box-shadow: var(--material-shadow);
+}

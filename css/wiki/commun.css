@@ -1,0 +1,246 @@
+*{
+    font-family: raleway;
+    font-weight: 200;
+}
+
+    /**@@@VARIABLES@@@**/
+:root{
+    --wiki-padding-w: 2vmin;
+    --wiki-padding-h: 2vmin;
+    
+    --bold-fontWeight: 700;
+    
+    --wiki-title-marginBottom: 2vmin;
+    --top-bar-height: 10vh;
+    
+    --centered-regular-img-width: 30vw;
+    
+    --sommaire-max-width: 30vw;
+    
+    
+    --front-color: #3c3f41;
+    --back-color: #e9bee;
+}
+
+
+    /**@@GLOBAL@@**/
+/**Holder for this wiki page's content
+*@requirements used on a DIV
+*/
+div#wiki_content {
+    overflow-x: hidden;
+	width:auto;
+    height:auto;
+/*    min-height: 100%;*/
+    position: relative;
+    padding:var(--wiki-padding-h) calc(var(--wiki-padding-w) * 2);
+    margin-bottom:calc(var(--top-bar-height) + (var(--wiki-padding-h) / 2));
+}
+
+
+/**Wiki's logo
+*@requirements first item in #wiki_content
+*/
+img#wiki-logo{
+    height:auto;
+    margin-bottom: var(--wiki-padding-h);
+}
+
+
+/**Holder for a section's content
+*@requirements used on  div inside a #wiki_content
+*/
+div.section{
+    width:100%;
+    height:auto;
+    
+    margin-bottom: calc(var(--wiki-padding-w) * 3);
+}
+
+
+/*///////////////////////////////////////////*/
+
+    /**@@@SECTION TITLE@@@**/
+/**Title for a section
+*@requirements used on a H1 in a .section
+*/
+h1.section_title{
+    display: block;
+    box-sizing: border-box;
+    
+    border-bottom: 1px solid var(--front-color);
+    border-bottom-width: thin;
+    
+    /*width:calc(100vw - (var(--wiki-padding-w) * 2) - (var(--wiki-padding-w) * 2)    );*/
+    width:100%;
+    height:auto;
+    
+    
+    /*fontsize in main/mobile*/
+    overflow-y: hidden;
+    word-wrap: break-word;
+    
+    font-weight: var(--bold-fontWeight);
+    margin-bottom: var(--wiki-title-marginBottom);
+    
+
+}
+
+
+/*///////////////////////////////////////////*/
+
+
+    /**@@@REGULAR TEXT COMPONENT@@@**/
+/**Regular text in a section
+*@requirements used in a .section
+*/
+p.text{
+    box-sizing: border-box;
+    
+	width:100%;
+    height:auto;
+    
+    overflow:hidden;
+    word-wrap: break-word;
+}
+
+/**boldify text in .text
+*@requirements used in a .text
+*/
+p.text > b{
+    font-weight: var(--bold-fontWeight);
+}
+
+/**crosses text in .text
+*@requirements used in a .text
+*/
+p.text > del{
+}
+
+/**marks update of text in .text
+*@requirements used in a .text
+*/
+p.text > ins{
+    font-weight: 400;
+}
+p.text > ins::before, p.text > ins::after{
+    content: '•';
+}
+
+/**marks update of text in .text
+*@requirements used in a .text
+*/
+p.text > a{
+    font-weight: var(--bold-fontWeight);
+}
+
+/**tags a part of text to add info about it
+*@requirements used in a .text
+*/
+p.text > abbr{
+}
+
+
+    /**@@@REGULAR IMAGE COMPONENT@@@**/
+/**image displayed centered horizontally
+*@requirements used in a .section, followed by a (empty or not) p.section_imgC_legende
+*/
+img.section_imgC{
+    width:var(--centered-regular-img-width);
+    height:auto;
+    margin-top: var(--wiki-padding-h);
+    margin-left: calc((100% - var(--centered-regular-img-width) - var(--wiki-padding-w)) / 2);
+}
+/**img legend, displayed bellow the image centered horizontally
+*@requirements preceeded by an img.section_imgC
+*/
+p.section_imgC_legende{
+    width:var(--centered-regular-img-width);
+    margin-left: calc((100% - var(--centered-regular-img-width) - var(--wiki-padding-w)) / 2);
+    padding:1vmin;
+}
+
+/**image displayed centered aligned Left
+*@requirements used in a .section, followed by a (empty or not) p.section_imgL_legende
+*/
+img.section_imgL{
+    width:var(--centered-regular-img-width);
+    height:auto;
+    margin-top: var(--wiki-padding-h);
+    margin-left: 0;
+}
+/**img legend, displayed bellow the image aligned left
+*@requirements preceeded by an img.section_imgL
+*/
+p.section_imgL_legende{
+    width:var(--centered-regular-img-width);
+    margin-left: 0;
+    padding:1vmin;
+}
+
+/**image displayed centered aligned Left
+*@requirements used in a .section, followed by a (empty or not) p.section_imgR_legende
+*/
+img.section_imgR{
+    width:var(--centered-regular-img-width);
+    height:auto;
+    margin-top: var(--wiki-padding-h);
+    margin-left: calc(100% - var(--centered-regular-img-width));
+}
+/**img legend, displayed bellow the image centered horizontally
+*@requirements preceeded by an img.section_imgR
+*/
+p.section_imgR_legende{
+    width:var(--centered-regular-img-width);
+    margin-left: calc(100% - var(--centered-regular-img-width));
+    padding:1vmin;
+}
+
+
+/*///////////////////////////////////////////*/
+
+    /**@@SOMMAIRE@@**/
+    /**Sommaire elements
+    *@requirements must be in a div.section.sommaire
+    */
+/**div holding the sommaire
+*
+*/
+div.summary{
+    width:auto;
+    max-width: var(--sommaire-max-width);
+    padding: var(--wiki-padding-w);
+}
+
+h3.summary-title{
+    width:auto;
+    max-width: var(--sommaire-max-width);
+    height:auto;
+    
+    word-wrap: break-word;
+    
+    margin-bottom: var(--wiki-padding-w);
+}
+
+ul.main-summary{
+    width:auto;
+    max-width: var(--sommaire-max-width);
+    height:auto;
+    
+    margin-left: calc(var(--wiki-padding-w) * 3);
+}
+
+ul.sub-summary{
+    width:auto;
+    height:auto;
+    
+    margin-left: var(--wiki-padding-w);
+}
+
+ul.main-summary li{
+    box-sizing: border-box;
+}
+
+ul.main-summary li, ul.main-summary a{
+    margin-bottom: calc(var(--wiki-padding-h) / 2);
+}
