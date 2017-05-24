@@ -3,6 +3,8 @@
     --MAIN-section-title-fontSize: 5vmin;
     --MAIN-section-text-fontSize: 3vmin;
     --MAIN-wiki-width: 8vw;
+    --MAIN-infobox-width: 30%;
+    --MAIN-infobox-fontSize: 4vh;
 }
 
 
@@ -23,3 +25,27 @@ h3.summary-title{
     font-size: calc(var(--MAIN-section-title-fontSize) * 0.9);
 }
 
+div.section-infobox{
+    width:100%;
+    margin-right: calc(2 * var(--wiki-padding-w));
+}
+
+div.section-infobox > div.infobox{
+    width:var(--MAIN-infobox-width);
+    padding:var(--wiki-padding-h) var(--wiki-padding-w);
+}
+
+div.section-infobox > div.complement{
+    width: calc(100% - var(--MAIN-infobox-width));
+}
+
+.infobox > h3.infobox-title{
+    font-size: var(--MAIN-infobox-fontSize);
+}
+
+
+.infobox > img{
+    width:calc(100% - var(--wiki-padding-w) - var(--wiki-padding-w));
+    border-radius: 2vmin;
+    height:auto;
+}

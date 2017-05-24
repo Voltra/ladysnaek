@@ -19,7 +19,9 @@
     
     
     --front-color: #3c3f41;
-    --back-color: #e9bee;
+    --back-color: #e9ebee;
+    
+    --wiki-innerWidth: calc(100vw - var(--wiki-padding-w) - var(--wiki-padding-w));
 }
 
 
@@ -201,7 +203,7 @@ p.section_imgR_legende{
 
     /**@@SOMMAIRE@@**/
     /**Sommaire elements
-    *@requirements must be in a div.section.sommaire
+    *@requirements must be in a div.summary
     */
 /**div holding the sommaire
 *
@@ -244,3 +246,89 @@ ul.main-summary li{
 ul.main-summary li, ul.main-summary a{
     margin-bottom: calc(var(--wiki-padding-h) / 2);
 }
+
+
+
+    /**@@@COMPOSIT COMPONENT@@@**/
+/**Holder for a text+infobox
+*@requirements used in a .wiki_content
+*/
+div.section-infobox{
+    margin-top: var(--wiki-padding-h);
+    width:var(--wiki-innerWidth);
+    height:auto;
+}
+
+/**Holder for the infobox's content
+*@requirements used in a .setion-infobox
+*/
+div.infobox{
+    clear:left;
+    float:right;
+    display: block;
+    height:auto;
+    margin-right: calc( var(--wiki-padding-h) + var(--wiki-padding-h) );
+}
+
+div.infobox>*{
+    margin: var(--wiki-padding-h) var(--wiki-padding-w);
+}
+
+/**Holder for the content on the left of the infobox
+*@requirements used in a .setion-infobox
+*/
+div.complement{
+    clear:right;
+    float:left;
+    display: block;
+    height:auto;
+}
+
+
+
+/**Image component for the infobox
+*@requirements used in a .infobox
+*/
+.infobox > img{
+    height:auto;
+}
+
+
+/**List of infos for the infobox
+*@requirements used in a .infobox
+*/
+div.infobox-info{
+    width:100%;
+    height:auto;
+}
+
+
+/**Title of a series of elements
+*@requirements used in a .infobox-info prior to a .sub-infobox
+*/
+div.infobox-info > p.infobox-elem-title{
+    width: 100%;
+    height:auto;
+    
+    text-transform: uppercase;
+}
+
+/**holder for a series of elements
+*@requirements used in a .infobox-info after a .infobox-elem-title
+*/
+div.sub-infobox{
+    width: 100%;
+    height: auto;
+    margin-bottom: calc(2 * var(--wiki-padding-h));
+    padding: var(--wiki-padding-h);
+    padding-top: calc(var(--wiki-padding-h) / 2);
+}
+div.sub-infobox:last-child{margin:0;}
+
+/**
+*@requirements
+*/
+.sub-infobox > p{
+	
+}
+

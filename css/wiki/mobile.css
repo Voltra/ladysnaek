@@ -4,6 +4,9 @@
     --MOBILE-section-text-fontSize: 5vmin;
     --MOBILE-sommaire-max-width: 80vw;
     --MOBILE-wiki-width: 25vw;
+    --MOBILE-infobox-width: 80vw;
+    --MOBILE-infobox-fontSize: 5vmax;
+    --MOBILE-infobox-marginLeft: calc(  (var(--wiki-innerWidth) - var(--MOBILE-infobox-width    )) / 2 - var(--wiki-padding-w) - var(--wiki-padding-w));
 }
 
 
@@ -47,4 +50,38 @@ ul.main-summary{
     height:auto;
     
     margin-left: calc(var(--wiki-padding-w) * 3);
+}
+
+
+
+div.section-infobox{
+    width:calc(var(--MOBILE-infobox-width) - (6 * var(--wiki-padding-w)));
+}
+
+div.section-infobox > div.infobox{
+    width:calc(var(--MOBILE-infobox-width) - var(--wiki-padding-h) - var(--wiki-padding-h));
+    padding:var(--wiki-padding-h) var(--wiki-padding-w);
+    
+    clear:both;
+    float: none;
+    
+    margin-left: var(--MOBILE-infobox-marginLeft);
+}
+
+div.section-infobox > div.complement{
+    width: calc(100% - var(--MOBILE-infobox-width));
+    
+    clear:both;
+    float: none;
+}
+
+.infobox > h3.infobox-title{
+    font-size: var(--MOBILE-infobox-fontSize);
+}
+
+
+.infobox > img{
+    width:calc(100% - var(--wiki-padding-w) - var(--wiki-padding-w));
+    border-radius: 2vmin;
+    height:auto;
 }

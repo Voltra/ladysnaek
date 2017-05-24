@@ -3,6 +3,12 @@
     --link-color:#0e7daf;
     --material-shadow: 0 0.4vmin 0.4vmin 0.2vmin rgba(0,0,0,0.15);
     --wiki-logo-shadow: 0 0.4vmin 0.4vmin rgba(0,0,0,0.15);
+    --main-border-style: 2px solid var(--front-color);
+    
+    --main-txt-color: #3c3f41;
+    --main-bg-color: #e9ebee;
+    
+    --main-lowOpa-bg-color: rgba(60, 63, 65, 0.1);
 }
 
 
@@ -24,6 +30,22 @@ ul.main-summary a{
 }
 
 div.summary{
-    outline: 2px solid var(--front-color);
+    outline: var(--main-border-style);
     box-shadow: var(--material-shadow);
+}
+
+div.section-infobox > .infobox{
+    outline: var(--main-border-style);
+}
+
+div.section-infobox > .infobox > .infobox-title{
+    border-bottom : var(--main-border-style);
+}
+
+div.section-infobox > .infobox > *:last-child{
+    border:none;
+}
+
+div.section-infobox > *{
+    filter: drop-shadow(var(--material-shadow));
 }
